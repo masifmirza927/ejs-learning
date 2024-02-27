@@ -1,0 +1,25 @@
+
+
+<%- include('./partials/header.ejs') %>
+
+<div class="container">
+    <div class="page-content">
+        <h1 class="text-center">Create Post</h1>
+        <form action="/blog/create" method="post" class="w-50 mx-auto" enctype="application/x-www-form-urlencoded">
+            <div class="mb-3">
+                <input type="text" name="content"  id="content" placeholder="Post content..." class="form-control" />
+            </div>
+            <div class="mb-3">
+                <input type="text" name="imageUrl"  id="content" placeholder="Image url" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success w-100">Create Post</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+<%- include('./partials/footer.ejs') %>
